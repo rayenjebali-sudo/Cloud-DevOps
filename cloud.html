@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayen | Cloud & DevOps Portfolio</title>
+  <link rel="stylesheet" href="cloud.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script defer src="cloud.js"></script>
+</head>
+<body>
+  <div class="background-gradient"></div>
+
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="logo">R<span class="accent">.</span></span>
+      <span class="logo-subtitle">Cloud & DevOps</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Cloud Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <span class="toggle-icon">🌙</span>
+    </button>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="hero-content">
+        <p class="hero-tag">Aspiring Cloud & DevOps Engineer</p>
+        <h1 class="hero-title">
+          Hi, I'm <span class="accent">Rayen</span>.<br />
+          I build <span class="gradient-text">cloud-native</span> solutions.
+        </h1>
+        <p class="hero-subtitle">
+          Passionate about automation, scalable architectures, and reliable deployments.
+          Exploring Azure, containers, CI/CD, and modern DevOps practices.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Cloud Projects</a>
+          <a href="#contact" class="btn ghost">Let’s Connect</a>
+        </div>
+        <div class="hero-meta">
+          <span>Cloud • DevOps • Automation • Observability</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-orbit">
+          <div class="orbit-circle orbit-1"></div>
+          <div class="orbit-circle orbit-2"></div>
+          <div class="orbit-circle orbit-3"></div>
+          <div class="hero-core">
+            <span>Cloud</span>
+          </div>
+        </div>
+        <div class="hero-badges">
+          <div class="badge">Azure</div>
+          <div class="badge">Docker</div>
+          <div class="badge">GitHub Actions</div>
+          <div class="badge">Linux</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>Who I am and where I'm going in the cloud.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text card">
+          <h3>Cloud & DevOps Journey</h3>
+          <p>
+            I'm a student and aspiring Cloud/DevOps engineer, building a strong foundation in
+            cloud platforms, Linux, containers, and automation. I enjoy designing architectures
+            that are scalable, secure, and easy to operate.
+          </p>
+          <p>
+            My focus is on learning by doing: deploying real workloads, experimenting with CI/CD
+            pipelines, and documenting architectures that reflect industry best practices.
+          </p>
+          <p>
+            My goal is to grow into a role where I can design, automate, and maintain
+            cloud-native systems that support modern applications at scale.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <span class="highlight-label">Focus Areas</span>
+            <p>Cloud infrastructure, automation, CI/CD, observability, and security basics.</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-label">Currently Learning</span>
+            <p>Azure services, Docker, GitHub Actions, Terraform, and Kubernetes fundamentals.</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-label">Career Goal</span>
+            <p>Become a Cloud/DevOps engineer contributing to reliable, scalable platforms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cloud Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="section-header">
+        <h2>Cloud Projects</h2>
+        <p>Hands-on labs, deployments, and experiments in the cloud.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Example project cards (you can edit/duplicate these) -->
+        <article class="project-card">
+          <div class="project-tag">Azure</div>
+          <h3>Static Website on Azure Storage</h3>
+          <p>
+            Deployed a static website using Azure Storage static website hosting, integrated with
+            Azure CDN for global performance and HTTPS.
+          </p>
+          <ul class="project-meta">
+            <li>Azure Storage</li>
+            <li>Azure CDN</li>
+            <li>GitHub Pages backup</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">CI/CD</div>
+          <h3>GitHub Actions CI Pipeline</h3>
+          <p>
+            Built a CI pipeline to lint, test, and build a sample application on every push,
+            with status checks and artifacts.
+          </p>
+          <ul class="project-meta">
+            <li>GitHub Actions</li>
+            <li>Node.js</li>
+            <li>Automated testing</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Containers</div>
+          <h3>Dockerized Web App</h3>
+          <p>
+            Containerized a simple web application, created a Dockerfile, and ran it locally and
+            in the cloud using a container registry.
+          </p>
+          <ul class="project-meta">
+            <li>Docker</li>
+            <li>Container Registry</li>
+            <li>Linux</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Monitoring</div>
+          <h3>Basic Observability Lab</h3>
+          <p>
+            Experimented with logging and metrics for a sample app, exploring dashboards and
+            alerts to understand system behavior.
+          </p>
+          <ul class="project-meta">
+            <li>Logs & Metrics</li>
+            <li>Dashboards</li>
+            <li>Alerts</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- GitHub Integration -->
+      <div class="github-section">
+        <h3>GitHub Repositories</h3>
+        <p class="github-subtitle">
+          Automatically fetched from my GitHub profile to showcase recent work.
+        </p>
+        <div id="github-repos" class="github-repos">
+          <p class="github-loading">Loading repositories...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <p>Technologies and tools I’m building expertise in.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-column card">
+          <h3>Cloud & Platforms</h3>
+          <div class="skill">
+            <span>Microsoft Azure</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+          </div>
+          <div class="skill">
+            <span>Linux</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+          </div>
+          <div class="skill">
+            <span>Containers (Docker)</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-column card">
+          <h3>DevOps & Automation</h3>
+          <div class="skill">
+            <span>Git & GitHub</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+          </div>
+          <div class="skill">
+            <span>CI/CD (GitHub Actions)</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="60"></div></div>
+          </div>
+          <div class="skill">
+            <span>Shell Scripting</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="55"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-column card">
+          <h3>Foundations</h3>
+          <div class="skill">
+            <span>Networking Basics</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="60"></div></div>
+          </div>
+          <div class="skill">
+            <span>Security Basics</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="50"></div></div>
+          </div>
+          <div class="skill">
+            <span>Programming (e.g. Python/JS)</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="55"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture / Case Study Section -->
+    <section id="architecture" class="section architecture">
+      <div class="section-header">
+        <h2>Architecture & Case Studies</h2>
+        <p>Cloud diagrams and short explanations of how everything fits together.</p>
+      </div>
+      <div class="architecture-grid">
+        <article class="architecture-card card">
+          <h3>Sample Azure Web App Architecture</h3>
+          <p>
+            A simple reference architecture for hosting a web application on Azure with
+            scalability and security in mind.
+          </p>
+          <ul class="architecture-points">
+            <li>Azure App Service for the web application.</li>
+            <li>Azure Storage for static assets and backups.</li>
+            <li>Azure Monitor for logs and metrics.</li>
+            <li>GitHub Actions for CI/CD deployments.</li>
+          </ul>
+          <p class="architecture-note">
+            You can replace this text with a real diagram image (PNG/SVG) and a more detailed
+            explanation of your own architecture.
+          </p>
+        </article>
+
+        <article class="architecture-card card">
+          <h3>Containerized App with CI/CD</h3>
+          <p>
+            A basic pipeline where code changes trigger a build, container image creation, and
+            deployment to a container platform.
+          </p>
+          <ul class="architecture-points">
+            <li>GitHub repository as the source of truth.</li>
+            <li>GitHub Actions builds and pushes Docker images.</li>
+            <li>Container registry stores versioned images.</li>
+            <li>Deployment to Azure Web App for Containers or Kubernetes.</li>
+          </ul>
+          <p class="architecture-note">
+            Ideal for demonstrating DevOps concepts like automation, repeatability, and
+            infrastructure as code.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Let’s talk about cloud, DevOps, or potential opportunities.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form card" action="https://formspree.io/f/your-id" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              placeholder="Tell me about your project, opportunity, or question."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn primary full-width">Send Message</button>
+        </form>
+
+        <div class="contact-info card">
+          <h3>Connect</h3>
+          <p>
+            I’m always open to discussing cloud projects, DevOps practices, or entry-level
+            opportunities.
+          </p>
+          <ul class="contact-links">
+            <li>
+              <span>GitHub:</span>
+              <a href="https://github.com/rayenjebali-sudo" target="_blank" rel="noreferrer">
+                github.com/your-github-username
+              </a>
+            </li>
+            <li>
+              <span>LinkedIn:</span>
+              <a href="https://www.linkedin.com/in/rayen-jebali-6021a33a2/" target="_blank" rel="noreferrer">
+                linkedin.com/in/your-linkedin
+              </a>
+            </li>
+            <li>
+              <span>Email:</span>
+              <a href="rayen.jebali@esen.tn">you@example.com</a>
+            </li>
+          </ul>
+          <p class="contact-note">
+            
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Rayen jebali — Cloud & DevOps Portfolio</span>
+  </footer>
+</body>
+</html>
